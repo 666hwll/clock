@@ -4,6 +4,8 @@
 // CCC        LL      OO     OO   CCC         KKK
 //  CCC       LL       OO   OO     CCC        KK KK
 //   CCCCCCC  LLLLLLL   OOOO        CCCCCCCC  KK  KK
+//
+// by Darwin Zmugg
 
 #include <stdio.h>
 #include "conf.h"
@@ -85,6 +87,7 @@ int main () {
  stopwat();
  break;
  case 3:
+ alarmclock();
  break;
  case 4:
  option();
