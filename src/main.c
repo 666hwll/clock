@@ -70,15 +70,15 @@ int option() {
     return 0;
 }
 
-int main () {
- int chosen;  
+int main (int argc, int ** argv) {
+ int userInput = -1;  
  printf(ANSICYAN"%s"ANSIRESET,welcMess);
  do
  {
  printf(ANSIMAGENTA"\n\n\n1. Timer\n2. Stopwatch\n3. Alarm clock\n4. Option\n5. Exit\n\n\n"ANSIRESET);
- scanf("%d", &chosen);
- } while (chosen < 1 || chosen > 5);
- switch (chosen)
+ scanf("%d", &userInput);
+ } while (userInput < 1 || userInput > 5);
+ switch (userInput)
  {
  case 1:
     timer();
